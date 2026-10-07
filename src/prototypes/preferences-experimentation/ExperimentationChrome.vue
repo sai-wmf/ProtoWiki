@@ -3,7 +3,6 @@ import { CdxButton, CdxIcon } from '@wikimedia/codex'
 import {
   cdxIconAppearance,
   cdxIconBell,
-  cdxIconTray,
   cdxIconWatchlist,
 } from '@wikimedia/codex-icons'
 
@@ -11,15 +10,19 @@ import ChromeHeader from '@/components/chrome/ChromeHeader.vue'
 import ChromeWrapper from '@/components/chrome/ChromeWrapper.vue'
 import type { HeaderItem } from '@/components/header/headerItems'
 
+import NoticesMenu from './NoticesMenu.vue'
 import { EXPERIMENTATION_MAIN, EXPERIMENTATION_USERNAME } from './routes'
 import UserMenu from './UserMenu.vue'
 
 withDefaults(
   defineProps<{
     lastEditedNotice?: boolean
+    /** Auto-open the Echo Notices panel (Main Page delivery). */
+    openNotices?: boolean
   }>(),
   {
     lastEditedNotice: true,
+    openNotices: false,
   },
 )
 
@@ -48,9 +51,7 @@ const minervaRight: HeaderItem[] = [
           <CdxButton weight="quiet" aria-label="Notifications">
             <CdxIcon :icon="cdxIconBell" />
           </CdxButton>
-          <CdxButton weight="quiet" aria-label="Notices">
-            <CdxIcon :icon="cdxIconTray" />
-          </CdxButton>
+          <NoticesMenu :default-open="openNotices" />
           <CdxButton
             weight="quiet"
             class="experimentation-chrome__hide-narrow"

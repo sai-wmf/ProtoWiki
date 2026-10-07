@@ -1,12 +1,7 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { RouterLink } from 'vue-router'
-import { CdxToast } from '@wikimedia/codex'
-
 import ArticleLive from '@/components/article/ArticleLive.vue'
 
 import ExperimentationChrome from './ExperimentationChrome.vue'
-import { EXPERIMENTATION_PREFERENCES } from './routes'
 
 definePage({
   meta: {
@@ -17,34 +12,10 @@ definePage({
     platform: 'web',
   },
 })
-
-const showToast = ref(true)
 </script>
 
 <template>
-  <ExperimentationChrome>
+  <ExperimentationChrome open-notices>
     <ArticleLive article="Main Page" :blank-titlebar="true" />
-    <CdxToast
-      v-if="showToast"
-      standalone
-      type="notice"
-      :auto-dismiss="false"
-      @user-dismissed="showToast = false"
-    >
-      We run anonymous tests to improve Wikipedia. You can choose whether to take part.
-      <RouterLink
-        class="experimentation-toast__link"
-        :to="{ path: EXPERIMENTATION_PREFERENCES, hash: '#mw-prefsection-experimentation' }"
-      >
-        Manage preferences
-      </RouterLink>
-    </CdxToast>
   </ExperimentationChrome>
 </template>
-
-<style scoped>
-.experimentation-toast__link {
-  color: var(--color-progressive);
-  text-decoration: underline;
-}
-</style>
