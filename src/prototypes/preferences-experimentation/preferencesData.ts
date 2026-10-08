@@ -1087,7 +1087,7 @@ export const PREFERENCE_TABS: PrefTab[] = [
         id: 'experimentation',
         title: 'Participation in feature studies',
         description:
-          "We test new features to improve Wikipedia. When you take part in a feature study, you may see an alternate design while we learn what works best. Participation is anonymous and optional. Opting out doesn't turn off features that are later released to everyone, and it is separate from Beta features, which you enable or disable individually.",
+          "We test new features to improve Wikipedia. When you are selected to take part in a feature study, you may see an alternate design. To learn what works best, we measure anonymous interactions with that design. Participation is optional. Opting out doesn't turn off features that are later released to everyone, and it is separate from Beta features, which you enable or disable individually.",
         fields: [
           {
             id: 'experimentation-opt-out',
