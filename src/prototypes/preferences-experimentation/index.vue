@@ -32,8 +32,8 @@ const showToast = ref(true)
       :auto-dismiss="false"
       @user-dismissed="showToast = false"
     >
-      We experiment with new features and collect anonymous interaction data to improve
-      Wikipedia for everyone.
+      We run feature studies and collect anonymous interaction data to improve Wikipedia for
+      everyone.
       <RouterLink
         class="experimentation-toast__link"
         :to="{ path: EXPERIMENTATION_PREFERENCES, hash: '#mw-prefsection-experimentation' }"

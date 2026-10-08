@@ -51,7 +51,7 @@ const notices = ref<NoticeItem[]>([
     id: 'product-testing',
     header: [
       {
-        text: 'We experiment with new features and collect anonymous interaction data to improve Wikipedia for everyone.',
+        text: 'We run feature studies and collect anonymous interaction data to improve Wikipedia for everyone.',
       },
     ],
     body: 'You can change this anytime in Preferences → Data collection.',
@@ -66,7 +66,7 @@ const notices = ref<NoticeItem[]>([
       },
     },
     secondary: {
-      label: 'Learn which tests this covers',
+      label: 'Learn which studies this covers',
       icon: cdxIconArticle,
       href: 'https://meta.wikimedia.org/wiki/List_of_experiments_in_Product_and_Technology',
     },
