@@ -51,7 +51,7 @@ const notices = ref<NoticeItem[]>([
     id: 'product-testing',
     header: [
       {
-        text: 'We test new features to improve Wikipedia for everyone. Tests are anonymous and optional.',
+        text: 'We test new features to improve Wikipedia for everyone. Feature studies are anonymous and optional.',
       },
     ],
     body: 'You can change this anytime in Preferences → Feature studies.',

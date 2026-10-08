@@ -32,7 +32,8 @@ const showToast = ref(true)
       :auto-dismiss="false"
       @user-dismissed="showToast = false"
     >
-      We test new features to improve Wikipedia for everyone. Tests are anonymous and optional.
+      We test new features to improve Wikipedia for everyone. Feature studies are anonymous and
+      optional.
       <RouterLink
         class="experimentation-toast__link"
         :to="{ path: EXPERIMENTATION_PREFERENCES, hash: '#mw-prefsection-experimentation' }"
