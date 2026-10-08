@@ -1081,13 +1081,13 @@ export const PREFERENCE_TABS: PrefTab[] = [
   },
   {
     id: 'experimentation',
-    label: 'Data collection',
+    label: 'Feature studies',
     sections: [
       {
         id: 'experimentation',
-        title: 'Data collection preferences',
+        title: 'Feature studies',
         description:
-          "The Wikimedia Foundation runs feature studies to evaluate new designs and improve Wikipedia. When you are included in a study, you may see an alternate design while we measure how it works. Taking part is optional, and only fully anonymous interaction data is collected. If you prefer not to participate, you can opt out of all feature studies using the option below. This doesn't turn off features that are later released to everyone, and it is separate from Beta features, which you enable or disable individually.",
+          "We test new features to improve Wikipedia. When you take part in a feature study, you may see an alternate design while we learn what works best. Participation is anonymous and optional. Opting out doesn't turn off features that are later released to everyone, and it is separate from Beta features, which you enable or disable individually.",
         fields: [
           {
             id: 'experimentation-opt-out',

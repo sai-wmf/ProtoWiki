@@ -51,14 +51,14 @@ const notices = ref<NoticeItem[]>([
     id: 'product-testing',
     header: [
       {
-        text: 'We run feature studies and collect anonymous interaction data to improve Wikipedia for everyone.',
+        text: 'We test new features to improve Wikipedia for everyone. Tests are anonymous and optional.',
       },
     ],
-    body: 'You can change this anytime in Preferences → Data collection.',
+    body: 'You can change this anytime in Preferences → Feature studies.',
     timestamp: 'now',
     unread: true,
     primary: {
-      label: 'Manage your data collection preferences',
+      label: 'Manage your preferences',
       icon: cdxIconSettings,
       to: {
         path: EXPERIMENTATION_PREFERENCES,
