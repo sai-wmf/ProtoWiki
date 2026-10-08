@@ -1081,18 +1081,18 @@ export const PREFERENCE_TABS: PrefTab[] = [
   },
   {
     id: 'experimentation',
-    label: 'Product testing',
+    label: 'Data collection',
     sections: [
       {
         id: 'experimentation',
-        title: 'Test participation preferences',
+        title: 'Data collection preferences',
         description:
-          "The Wikimedia Foundation runs fully anonymous A/B tests to improve Wikipedia. When you are included in an experiment, you may see an alternate design or feature while we measure how it works. Taking part in experiments is fully optional. If you prefer not to participate, you can opt out of all experimentation using the option below. This doesn't turn off features that are later released to everyone, and it is separate from Beta features, which you enable or disable individually.",
+          "The Wikimedia Foundation runs tests to evaluate new features and improve Wikipedia. When you are included in an experiment, you may see an alternate design while we measure how it works. Taking part in experiments is fully optional, and only fully anonymous interaction data is collected. If you prefer not to participate, you can opt out of all experimentation using the option below. This doesn't turn off features that are later released to everyone, and it is separate from Beta features, which you enable or disable individually.",
         fields: [
           {
             id: 'experimentation-opt-out',
             type: 'checkbox',
-            label: 'Opt out of product testing',
+            label: 'Opt out of experimentation and related data collection',
             helpHtml:
               'This preference currently applies to A/B tests run through Wikimedia\'s new experimentation platform. You won\'t be excluded from experiments configured in older systems, or from those related to infrastructure and security. <a href="https://meta.wikimedia.org/wiki/List_of_experiments_in_Product_and_Technology" rel="noopener noreferrer" target="_blank">Learn which tests this preference excludes you from</a>.',
             defaultValue: false,

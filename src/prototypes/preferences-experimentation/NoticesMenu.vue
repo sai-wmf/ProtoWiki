@@ -54,7 +54,7 @@ const notices = ref<NoticeItem[]>([
         text: 'We experiment with new features and collect anonymous interaction data to improve Wikipedia for everyone.',
       },
     ],
-    body: 'You can change this anytime in Preferences → Product testing.',
+    body: 'You can change this anytime in Preferences → Data collection.',
     timestamp: 'now',
     unread: true,
     primary: {
